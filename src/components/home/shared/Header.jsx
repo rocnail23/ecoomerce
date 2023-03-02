@@ -8,9 +8,9 @@ const Header = () => {
         <h1>ecommerce</h1>
         <nav>
             <ul>
-                <li><Link to="/">login</Link></li>
-                <li><Link to="/">Purcharse</Link></li>
-                <li><Link to="/">cart</Link></li>
+                <li><Link to="/login">login</Link></li>
+                <li><Link to="/purcharse">Purcharse</Link></li>
+                <li><Link to="/cart">cart</Link></li>
             </ul>
         </nav>
     </div>
