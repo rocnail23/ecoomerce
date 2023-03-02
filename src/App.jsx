@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Header from './components/home/shared/header'
+import Headers from './components/home/shared/Header'
 import Product from './pages/Product'
 import Home from './pages/Home'
 import { useDispatch, useSelector } from 'react-redux'
@@ -25,7 +25,7 @@ function App() {
     
   return (
     <div className="App">
-      <Header />
+      <Headers/>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<Product></Product>}/>
