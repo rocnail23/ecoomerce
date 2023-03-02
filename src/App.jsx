@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductThunk } from './store/slices/products.slice'
 import { useEffect } from 'react'
-import Register from './pages/register'
+import Registers from './pages/register'
 import { Login } from './pages/Login'
 import { getCartThunk } from './store/slices/cart.slice'
 import ProtectedRoutes from './pages/ProtectedRoutes'
@@ -30,7 +30,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<Product></Product>}/>
         <Route path='/user'> 
-        <Route path='register' element={<Register />}/>
+        <Route path='register' element={<Registers />}/>
         <Route path='login' element={<Login />} />
         </Route>
         <Route element={<ProtectedRoutes/>} >
