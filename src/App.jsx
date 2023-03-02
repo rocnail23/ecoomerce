@@ -6,12 +6,12 @@ import Home from './pages/Home'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductThunk } from './store/slices/products.slice'
 import { useEffect } from 'react'
-import Registers from './pages/register'
 import { Login } from './pages/Login'
 import { getCartThunk } from './store/slices/cart.slice'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 import Cart from './pages/Cart'
 import Purcharse from './pages/Purcharse'
+import Register from './pages/register'
 
 function App() {
  const {cart} = useSelector(state => state)
@@ -30,7 +30,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<Product></Product>}/>
         <Route path='/user'> 
-        <Route path='register' element={<Registers />}/>
+        <Route path='register' element={<Register />}/>
         <Route path='login' element={<Login />} />
         </Route>
         <Route element={<ProtectedRoutes/>} >
