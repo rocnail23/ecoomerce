@@ -31,8 +31,8 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<Product></Product>}/>
         <Route path='/user'> 
-        <Route path='register' element={<RegistePage/>}/>
-        <Route path='login' element={<Login />} />
+        <Route path='/register' element={<RegistePage/>}/>
+        <Route path='/login' element={<Login />} />
         </Route>
         <Route element={<ProtectedRoutes/>} >
           <Route path='/cart' element={<Cart/>} />
