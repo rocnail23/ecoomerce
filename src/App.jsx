@@ -11,7 +11,8 @@ import { getCartThunk } from './store/slices/cart.slice'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 import Cart from './pages/Cart'
 import Purcharse from './pages/Purcharse'
-import Register from './pages/register'
+import RegistePage from './pages/RegistePage'
+
 
 function App() {
  const {cart} = useSelector(state => state)
@@ -30,7 +31,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/product/:id' element={<Product></Product>}/>
         <Route path='/user'> 
-        <Route path='register' element={<Register />}/>
+        <Route path='register' element={<RegistePage/>}/>
         <Route path='login' element={<Login />} />
         </Route>
         <Route element={<ProtectedRoutes/>} >
