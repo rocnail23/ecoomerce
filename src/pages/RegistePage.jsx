@@ -3,7 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import defaultValues from '../utils/defaultValues'
 
-const Register = () => {
+const RegistePage = () => {
     const {register, handleSubmit, reset} = useForm() 
     const submit = (data) => {
         const url = "https://e-commerce-api-v2.academlo.tech/api/v1/users"
@@ -44,4 +44,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default RegistePage
